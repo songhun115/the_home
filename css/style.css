@@ -1,0 +1,32 @@
+.slide1{background: url("../images/slide1.jpg") no-repeat center center/cover;}
+.slide2{background: url("../images/slide2.jpg") no-repeat center center/cover;}
+.slide3{background: url("../images/slide3.jpg") no-repeat center center/cover;}
+.title{color: white; font-size: 2rem;}
+.section02{padding-top: 50px;}
+.section02_title{font-size: 1.5rem;     display: flex;justify-content: center;flex-direction: column;align-items: center;}
+.section02_title p {margin-top: 0;    margin-bottom: 30px;}
+.line{content: '';display: inline-block;width: 1px;height: 56px;border-left: 1px solid #7985ac;margin: 0 auto 20px;}
+.section02{max-width: 1200px; margin: 0 auto;}
+.img_box img {width: 100%;}
+.section02_foot_title{display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center; }
+.section02_foot_title h2{font-size: 2rem;}
+.section02_foot_title p {line-height: 1.5; margin-top: 0;}
+.section03{margin-top: 100px;}
+.section03_img_box{    max-width: 1200px;margin: 0 auto;}
+.img_list{display: flex;    flex-flow: wrap;}
+.img_item{width: 31%;margin: 0 10px; position: relative; overflow: hidden;}
+.img_item img{width: 100%;}
+.img_item_bg{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #c5ac82; opacity: 0; transition: 0.3s;}
+.img_item:hover .img_item_bg{ opacity: 0.8;}
+.img_item_text{display: flex;justify-content: center;align-items: center;flex-direction: column;height: 100%; color: #fff;}
+.img_item_text h5{margin: 0; font-size: 1.2rem;}
+.section03_foot_title{display: flex;justify-content: center;flex-direction: column;align-items: center;text-align: center; }
+.site_btn{padding:15px 25px; background-color: #333333; color: white;}
+.section04{margin-top: 100px;}
+.section4_img_item{width: 25%; margin: 0 10px;}
+.section4_img_item img {width: 100%;}
+.section4_img_wrap{max-width: 1200px;margin: 0 auto;}
+.section4_img_item_title{display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.section4_img_item_title p{margin:0 ;}
+
+.section4_img_list{display: flex;}
