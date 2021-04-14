@@ -2,12 +2,24 @@ $(document).ready(function(){
     $('.nav_btn').click(function() {
        
        $('.nav_list_mb').toggleClass('active');
+       if($('.nav_list_mb').hasClass('active')){
+           $('.mb_bg').addClass('active');
+           $('.header').addClass('active');
+           
+       } else {
+        $('.mb_bg').removeClass('active');
+    }
+    });
+
+    $('.close_box').click(function() {
+        $('.nav_list_mb').removeClass('active');
+        $('.mb_bg').removeClass('active');
+        $('.header').removeClass('active');
+
     });
     
         $(".nav_item_mb").click(function(){
-            var submenu = $(this).next(".nav_sub_list_mb");
-            console.log( $(this));
-            // submenu 가 화면상에 보일때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
+            var submenu = $(this).children("ul");
             if( submenu.is(":visible") ){
                 submenu.slideUp();
             }else{
@@ -16,3 +28,17 @@ $(document).ready(function(){
         });
 
  });
+
+//  $(window).scroll(function(event){
+//     var scroll = $(this).scrollTop();
+//     if (scroll > 100){
+//     //이벤트를 적용시킬 스크롤 높이
+//          $(".header").addClass("active");
+//     }
+//     else {
+//          $(".header").removeClass("active");
+//     }
+//     lastScroll = scroll;
+// });
+
+
